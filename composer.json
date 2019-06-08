@@ -1,0 +1,10 @@
+{
+    "name": "user/nnn",
+    "authors": [
+        {
+            "name": "romanets",
+            "email": "virucman@gmail.com"
+        }
+    ],
+    "require": {}
+}
