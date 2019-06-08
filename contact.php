@@ -1,36 +1,6 @@
 <?php
-/*
- *  CONFIGURE EVERYTHING HERE
- */
-require_once './vendor/autoload.php';
 
-
-try {
-
-// Create the Transport
-$transport = (new Swift_SmtpTransport('mail.romanetswork.com.ua', 25))
-  ->setUsername('sergey@romanetswork.com.ua ')
-  ->setPassword('21711Qt ')
-;
-
-// Create the Mailer using your created Transport
-$mailer = new Swift_Mailer($transport);
-
-// Create a message
-$message = (new Swift_Message('Wonderful Subject'))
-  ->setFrom([$_POST['email'] => $_POST['name']])
-  ->setTo(['sergey@romanetswork.com.ua' => 'Serg'])
-  ->setBody($_POST['message'])
-  ;
-
-// Send the message
-$result = $mailer->send($message);
-
-} catch (Exception $e) {
-  echo $e->getMessage();
-}
-
-
+echo "hellllo";
 
 
 

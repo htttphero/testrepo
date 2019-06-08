@@ -6,5 +6,7 @@
             "email": "virucman@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "monolog/monolog": "^1.24"
+    }
 }
